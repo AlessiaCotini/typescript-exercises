@@ -98,6 +98,27 @@ const myCar: Auto = {
   howMuch: 1,
 };
 
+console.log("esercizio 20");
+interface Movie<T> {
+  status: number;
+  success: boolean;
+  message: string;
+  data: T;
+}
+const getMovie = function () {
+  fetch("")
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+    })
+    .then((moviedetails) => {
+      return moviedetails;
+    })
+    .catch((err) => {
+      return err.status;
+    });
+};
 //SPIEGAZIONE
 
 let x: number = 100;

@@ -53,6 +53,7 @@ const myCar = {
     dateOFRelease: 2012,
     howMuch: 1,
 };
+console.log("esercizio 20");
 //SPIEGAZIONE
 let x = 100;
 let firstName = "Stefano";

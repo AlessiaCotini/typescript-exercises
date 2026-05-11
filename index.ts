@@ -59,3 +59,61 @@ const giorno: GiorniSettimana = "domenica";
 type NumeriPiccoli = 0 | 1 | 2 | 3 | 4 | 5;
 
 const valore: NumeriPiccoli = 4;
+
+//TIPO COMPLESSO
+
+const arrayDiStringhe: string[] = ["roberto", "stefano", "andrea"];
+const mixArray: (string | number)[] = [10, "francesco"];
+
+//OGGETTI
+
+const oggettiEsempio = {
+  brand: "apple",
+  model: "iphone",
+  color: "lime",
+  storage: 259,
+  activated: false,
+  configuration: {
+    onlinePurchase: true,
+    date: "2026-05-11",
+  },
+  avaiability: [128, 256, 512],
+};
+oggettiEsempio.avaiability.map((el) => el.toString());
+
+//per creare altri oggetti con le stesse caratteristiche di tipo
+
+interface Dog {
+  name: string;
+  age: number;
+  breed: string;
+}
+
+const dog: Dog = {
+  name: "marley",
+  age: 5,
+  breed: "labrador",
+};
+
+//INTERFACCIA CON GENERICS
+
+interface Address<C> {
+  city: string;
+  street: string;
+  civicNumber: C;
+  zipCode: string;
+}
+
+const address: Address<number> = {
+  city: "Rome",
+  street: "Via della Valle dei Fontanili",
+  civicNumber: 230,
+  zipCode: "00168",
+};
+
+const addressDue: Address<string> = {
+  city: "Trieste",
+  street: "Corso Trieste",
+  civicNumber: "34",
+  zipCode: "34562",
+};

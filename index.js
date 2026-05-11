@@ -34,3 +34,37 @@ let personal = "x";
 personal = 0;
 const giorno = "domenica";
 const valore = 4;
+//TIPO COMPLESSO
+const arrayDiStringhe = ["roberto", "stefano", "andrea"];
+const mixArray = [10, "francesco"];
+//OGGETTI
+const oggettiEsempio = {
+    brand: "apple",
+    model: "iphone",
+    color: "lime",
+    storage: 259,
+    activated: false,
+    configuration: {
+        onlinePurchase: true,
+        date: "2026-05-11",
+    },
+    avaiability: [128, 256, 512],
+};
+oggettiEsempio.avaiability.map((el) => el.toString());
+const dog = {
+    name: "marley",
+    age: 5,
+    breed: "labrador",
+};
+const address = {
+    city: "Rome",
+    street: "Via della Valle dei Fontanili",
+    civicNumber: 230,
+    zipCode: "00168",
+};
+const addressDue = {
+    city: "Trieste",
+    street: "Corso Trieste",
+    civicNumber: "34",
+    zipCode: "34562",
+};

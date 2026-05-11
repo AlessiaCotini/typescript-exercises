@@ -27,3 +27,10 @@ const sommaDefault = function (n1, n2) {
     return n1 + (n2 || 0);
 };
 console.log(sommaDefault(50));
+let mixed;
+mixed = 100;
+mixed = "ciao";
+let personal = "x";
+personal = 0;
+const giorno = "domenica";
+const valore = 4;

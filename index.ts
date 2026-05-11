@@ -33,3 +33,29 @@ const sommaDefault = function (n1: number, n2?: number) {
 };
 
 console.log(sommaDefault(50));
+
+let mixed: string | number;
+mixed = 100;
+mixed = "ciao";
+
+//boolean non fa parte dei tipi validi
+
+type PersonalType = string | number;
+
+let personal: PersonalType = "x";
+personal = 0;
+
+type GiorniSettimana =
+  | "lunedi"
+  | "martedi"
+  | "mercoledi"
+  | "giovedi"
+  | "venerdi"
+  | "sabato"
+  | "domenica";
+
+const giorno: GiorniSettimana = "domenica";
+
+type NumeriPiccoli = 0 | 1 | 2 | 3 | 4 | 5;
+
+const valore: NumeriPiccoli = 4;

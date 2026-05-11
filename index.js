@@ -1,5 +1,59 @@
 "use strict";
-console.log("Hello typescript!");
+console.log("esercizio 2");
+let myname = "Alessia";
+let myage = 28;
+let studingTypescript = true;
+console.log("esercizio 3");
+const greet = (name) => {
+    return "Ciao " + name;
+};
+console.log("esercizio 4");
+const sum = (a, b) => {
+    return a + b;
+};
+console.log("esercizio 5");
+const pricePlusIva = function (n1) {
+    let price = n1;
+    return price + price * 0.22;
+};
+console.log(pricePlusIva(10));
+console.log("esercizio 6");
+const lengthOfString = function (p1, p2) {
+    let sum = p1 + p2;
+    return sum.length.toLocaleString();
+};
+console.log(lengthOfString("andrea", "gianluca"));
+console.log("esercizio 8");
+let mixedValue = 2;
+mixedValue = null;
+mixedValue = undefined;
+console.log("esercizio 9");
+console.log("esercizio 10");
+const numbers = [1, 2, 3];
+const numeri = [4, 5, 6];
+console.log("esercizio 11");
+const tupleExampleForExercises = [
+    "stefano",
+    "buon",
+    "compleanno",
+    11,
+    5,
+];
+console.log("esercizio 13");
+console.log("esercizio 14");
+console.log("esercizio 15");
+const primo = { firstName: "Alessia", vote: 28 };
+const secondo = { firstName: "Martina", vote: 30 };
+const arrayStudenti = [primo, secondo];
+console.log(arrayStudenti);
+console.log("esercizio 16");
+console.log("esercizio 17");
+const myCar = {
+    type: "panda",
+    dateOFRelease: 2012,
+    howMuch: 1,
+};
+//SPIEGAZIONE
 let x = 100;
 let firstName = "Stefano";
 let z = "Roberto";

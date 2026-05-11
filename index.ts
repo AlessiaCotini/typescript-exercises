@@ -1,4 +1,104 @@
-console.log("Hello typescript!");
+console.log("esercizio 2");
+let myname: string = "Alessia";
+let myage: number = 28;
+let studingTypescript: boolean = true;
+
+console.log("esercizio 3");
+const greet = (name: string) => {
+  return "Ciao " + name;
+};
+
+console.log("esercizio 4");
+const sum = (a: number, b: number): number => {
+  return a + b;
+};
+
+console.log("esercizio 5");
+const pricePlusIva = function (n1: number) {
+  let price = n1;
+  return price + price * 0.22;
+};
+console.log(pricePlusIva(10));
+
+console.log("esercizio 6");
+const lengthOfString = function (p1: string, p2: string) {
+  let sum = p1 + p2;
+  return sum.length.toLocaleString();
+};
+console.log(lengthOfString("andrea", "gianluca"));
+
+console.log("esercizio 8");
+let mixedValue: null | undefined | number = 2;
+mixedValue = null;
+mixedValue = undefined;
+
+console.log("esercizio 9");
+type MesiAnno =
+  | "Gennaio"
+  | "Febbraio"
+  | "Marzo"
+  | "Aprile"
+  | "Maggio"
+  | "Giugno"
+  | "Luglio"
+  | "Agosto"
+  | "Settembre"
+  | "Ottobre"
+  | "Novembre"
+  | "Dicembre";
+
+console.log("esercizio 10");
+const numbers: number[] = [1, 2, 3];
+const numeri: Array<number> = [4, 5, 6];
+
+console.log("esercizio 11");
+const tupleExampleForExercises: [string, string, string, number, number] = [
+  "stefano",
+  "buon",
+  "compleanno",
+  11,
+  5,
+];
+
+console.log("esercizio 13");
+interface Oggetto {
+  firstName: string;
+  lastName: string;
+  age: number;
+}
+
+console.log("esercizio 14");
+interface User {
+  email: string;
+  phone?: number;
+}
+
+console.log("esercizio 15");
+interface Student {
+  firstName: string;
+  vote: number;
+}
+const primo: Student = { firstName: "Alessia", vote: 28 };
+const secondo: Student = { firstName: "Martina", vote: 30 };
+const arrayStudenti: object[] = [primo, secondo];
+console.log(arrayStudenti);
+
+console.log("esercizio 16");
+interface Veicolo {
+  type: string;
+  dateOFRelease: number;
+}
+interface Auto extends Veicolo {
+  howMuch: number;
+}
+console.log("esercizio 17");
+const myCar: Auto = {
+  type: "panda",
+  dateOFRelease: 2012,
+  howMuch: 1,
+};
+
+//SPIEGAZIONE
 
 let x: number = 100;
 let firstName: string = "Stefano";

@@ -117,3 +117,7 @@ const addressDue: Address<string> = {
   civicNumber: "34",
   zipCode: "34562",
 };
+
+//se una proprietà ha il punto di domanda non è necessario
+//zipCode? : string
+//non è necessario ma se c'è deve essere una stringa.
